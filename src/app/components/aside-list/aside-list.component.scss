@@ -1,0 +1,39 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #F2F3F7;
+  margin: 0;
+}
+
+li {
+    background-color: #F2F3F7;
+    height: 40px;
+}
+
+.unchecked {
+  width: 10px;
+  height: 10px;
+  margin-right: 12px;
+}
+
+.checked {
+  height: 9.12px;
+  width: 11.41px;
+  margin-right: 10.94px;
+}
+
+.checklist {
+  display: flex;
+}
+
+.checklist-item {
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.checklist-img {
+  display: flex;
+  align-items: center;
+}

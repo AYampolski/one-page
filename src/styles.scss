@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.container-app {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container-content {
+  margin: 0 108px;
+}
+
+.bg-style {
+  background: #f2f3f7;
+}
+
+.check-label-header {
+  margin-bottom: 3.86px;
+}
+
+.check-item {
+  margin-bottom: 19.3px;
+}

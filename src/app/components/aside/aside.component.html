@@ -1,0 +1,47 @@
+<div id="accordion" class="custom-accordion">
+  <div class="section-back">
+
+    <div class="section-back__icon">
+      <img src="../../../assets/imgs/subheader-arrow.svg" alt="arrow" />
+    </div>
+    <div>
+      <div class="section-back__text"> Back to Rate Quote</div>
+    </div>
+  </div>
+  <div class="card" *ngFor="let item of asideList; let i = index">
+    <div
+      id="headingOne"
+      data-toggle="collapse"
+      [attr.data-target]="'#collapse' + i"
+      aria-expanded="true"
+      aria-controls="collapseOne"
+    >
+      <h5 class="mb-0">
+        <div class="item-header">
+          <div class="item-header__label">
+            {{ item.title | uppercase }}
+          </div>
+
+          <div class="item-header__icon">
+            <img
+              src="../../../assets/imgs/accordion.svg"
+              class="logo__img"
+              alt="brand-logo"
+            />
+          </div>
+        </div>
+      </h5>
+    </div>
+    <div
+      [id]="'collapse' + i"
+      class="collapse"
+      [ngClass]="{ show: item.title === selectedAccordion }"
+      aria-labelledby="headingOne"
+      data-parent="#accordion"
+    >
+      <div>
+        <app-aside-list [checkboxList]="item.body"></app-aside-list>
+      </div>
+    </div>
+  </div>
+</div>

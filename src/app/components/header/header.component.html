@@ -1,47 +1,61 @@
-<nav class="navbar navbar-expand-lg navbar-light main-navbar bg-light main-container">
-  <div class="container">
-
-
-  <div class="navbar-brand logo" href="#">
-    <div class="logo__img-container">
-      <img src="../../../assets/imgs/triangle.svg" class="logo__img" alt="brand-logo" />
-    </div>
-    <div class="logo__text">
-      <img src="../../../assets/imgs/logotext.svg" class="logo__img--text" alt="brand-logo-text" />
-    </div>
-  </div>
-  <div class="main-links">
-    <ul class="navbar-nav">
-      <li class="nav-item" *ngFor="let link of mainLinks">
-        <a class="nav-link" href="#">{{link.name}}</a>
-      </li>
-    </ul>
-  </div>
-  <div class="collapse navbar-collapse secondary-links" id="navbarNav">
-    <ul class="navbar-nav">
-
-      <li class="nav-item nav-item-container" *ngFor="let link of secondaryLinks">
-        <div class="icon-container">
-          <img [src]="link.icon" [alt]="link.value">
+<div
+  class="navbar navbar-expand-lg  main-navbar content-mg "
+>
+  <div class="container-header bg-style">
+    <div class="navigation-visible">
+      <div class="navbar-brand logo" href="#">
+        <div class="logo__img-container">
+          <img
+            src="../../../assets/imgs/triangle.svg"
+            class="logo__img"
+            alt="brand-logo"
+          />
         </div>
-        <div class="link-text">
-          <a class="nav-link" href="#">{{link.name}}</a>
+        <div class="logo__text">
+          <img
+            src="../../../assets/imgs/logotext.svg"
+            class="logo__img--text"
+            alt="brand-logo-text"
+          />
         </div>
-      </li>
-    </ul>
+      </div>
+      <div class="main-links">
+        <ul class="navbar-nav">
+          <li class="nav-item" *ngFor="let link of mainLinks">
+            <a class="nav-link" href="#">{{ link.name }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="navigation-hidden">
+      <div class="collapse navbar-collapse secondary-links" id="navbarNav">
+        <ul class="navbar-nav">
+          <li
+            class="nav-item nav-item-container"
+            *ngFor="let link of secondaryLinks"
+          >
+            <div class="icon-container">
+              <img [src]="link.icon" [alt]="link.value" />
+            </div>
+            <div class="link-text">
+              <a class="nav-link" href="#">{{ link.name }}</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
   </div>
-
-
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
 </div>
-</nav>

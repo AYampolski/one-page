@@ -1,0 +1,14 @@
+<ul>
+  <li *ngFor="let item of checkboxList" class="checklist">
+    <div class="checklist-img">
+      <img
+        [ngClass]="item.isChecked ? 'checked' : 'unchecked'"
+        [src]="item.isChecked ? checked : unchecked"
+      />
+    </div>
+
+    <div class="checklist-item">
+      {{ item.name }}
+    </div>
+  </li>
+</ul>
