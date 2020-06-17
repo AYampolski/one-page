@@ -5,11 +5,13 @@
 
 .main {
     width: 608px;
-    margin-right: 92px;
+    display: flex;
+    flex-direction: column;
 }
 
 .content-divider {
     display: flex;
+    justify-content: space-between;
 }
 
 .aside {

@@ -4,7 +4,9 @@
   border-radius: 20px;
   height: 653px;
   width: 364px;
-  padding: 24px 32px;
+
+  padding: 4px 8px;
+  @media (min-width:  1016px) { padding: 24px 32px; }
 }
 
 .item-header {
