@@ -14,6 +14,7 @@ import { CheckCardComponent } from './components/check-card/check-card.component
 import { CheckStringComponent } from './components/check-items/check-string/check-string.component';
 import { CheckCurrencyComponent } from './components/check-items/check-currency/check-currency.component';
 import { CheckDateComponent } from './components/check-items/check-date/check-date.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CheckDateComponent } from './components/check-items/check-date/check-da
     CheckDateComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
