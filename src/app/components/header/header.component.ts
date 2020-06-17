@@ -10,8 +10,8 @@ import { INavLinks } from '../../models/navLinks.model';
 export class HeaderComponent implements OnInit {
   mainLinks: INavLinks[] = [{ name: 'Loans', value: 'loans' }];
   secondaryLinks: INavLinks[] = [
-    { name: 'My profile', value: 'myProfile', icon: '../../../assets/imgs/profile.svg' },
-    { name: 'Log out', value: 'LogOut', icon: '../../../assets/imgs/logout.svg' },
+    { name: 'My profile', value: 'myProfile', icon: 'assets/imgs/profile.svg' },
+    { name: 'Log out', value: 'LogOut', icon: 'assets/imgs/logout.svg' },
   ];
   constructor() {}
 

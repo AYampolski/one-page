@@ -12,7 +12,7 @@ import {
   styleUrls: ['./aside.component.scss'],
 })
 export class AsideComponent implements OnInit, AfterViewInit {
-  selectedAccordion = 'Processing';
+  selectedAccordion = 'Loan application';
   asideList = [
     { title: 'Loan application',
       body: [
@@ -30,14 +30,22 @@ export class AsideComponent implements OnInit, AfterViewInit {
     },
     { title: 'document gathering',
       body: [
-        { name: 'ivan2' },
-        { name: 'mary2' }
+        { name: 'Proin eros mauris', isChecked: false },
+        { name: 'Mauris eget cursus', isChecked: true },
+        { name: 'Curabitur non neque purus', isChecked: true },
+        { name: 'Lorem ipsum dolor', isChecked: true },
+        { name: 'Duis cursus', isChecked: true },
+        { name: 'Aliquam tortor nulla', isChecked: true },
+        { name: 'Maecenas in feugiat nisl', isChecked: true },
+
       ],
     },
     { title: 'Processing',
       body: [
-        { name: 'ivan2' },
-        { name: 'mary2' }
+        { name: 'Etiam blandit', isChecked: true },
+        { name: 'Suspendisse faucibus', isChecked: false },
+        { name: ' Curabitur luctus erat vitae ', isChecked: false },
+        { name: 'Sed semper pulvinar mi', isChecked: false },
       ],
     }
   ];

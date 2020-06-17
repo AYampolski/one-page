@@ -8,8 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class AsideListComponent implements OnInit {
 
   @Input() checkboxList;
-  checked = '../../../assets/imgs/done.svg';
-  unchecked = '../../../assets/imgs/undone.svg';
+  selectedItem = 'About you';
+  checked = 'assets/imgs/done.svg';
+  unchecked = 'assets/imgs/undone.svg';
   constructor() { }
 
   ngOnInit(): void {

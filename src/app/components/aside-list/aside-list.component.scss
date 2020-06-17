@@ -24,6 +24,7 @@ li {
 
 .checklist {
   display: flex;
+  padding-left: 12px;
 }
 
 .checklist-item {
@@ -36,4 +37,9 @@ li {
 .checklist-img {
   display: flex;
   align-items: center;
+}
+
+.isSelected {
+  background: rgba($color: #208EFD, $alpha: 0.07);
+  border-radius: 8px;
 }

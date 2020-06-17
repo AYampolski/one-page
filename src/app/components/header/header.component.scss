@@ -98,5 +98,7 @@
 }
 
 .content-mg {
-  padding: 0 108px;
+  padding: 0 36px;
+  @media (min-width:  1124px) { padding: 0 72px; }
+  @media (min-width: 1199.98px) { padding: 0 108px; }
 }
