@@ -1,24 +1,39 @@
 <div class="container-check-card">
-  <div class="subheader">{{subheader}}</div>
-  <div class="header">{{header}}</div>
+  <div class="subheader">{{ subheader }}</div>
+  <div class="header">{{ header }}</div>
   <div class="content">
     <div class="row">
       <div class="col-sm-4">
-        <app-check-string [header]="loanHeader" [content]="loanContent"></app-check-string>
+        <app-check-string
+          [header]="loanHeader"
+          [content]="loanContent"
+        ></app-check-string>
       </div>
       <div class="col-sm-4">
-        <app-check-date [header]="approvalHeader" [content]="approvalContent"></app-check-date>
+        <app-check-date
+          [header]="approvalHeader"
+          [content]="approvalContent"
+        ></app-check-date>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-4">
-        <app-check-currency [header]="totalHeader" [content]="totalContent"></app-check-currency>
+        <app-check-currency
+          [header]="totalHeader"
+          [content]="totalContent"
+        ></app-check-currency>
       </div>
       <div class="col-sm-4">
-        <app-check-currency [header]="purchaseHeader" [content]="purchaseContent"></app-check-currency>
+        <app-check-currency
+          [header]="purchaseHeader"
+          [content]="purchaseContent"
+        ></app-check-currency>
       </div>
       <div class="col-sm">
-        <app-check-currency [header]="rehabHeader" [content]="rehabContent"></app-check-currency>
+        <app-check-currency
+          [header]="rehabHeader"
+          [content]="rehabContent"
+        ></app-check-currency>
       </div>
     </div>
   </div>

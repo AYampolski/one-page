@@ -1,13 +1,13 @@
 ul {
   list-style-type: none;
   padding: 0;
-  background-color: #F2F3F7;
+  background-color: #f2f3f7;
   margin: 0;
 }
 
 li {
-    background-color: #F2F3F7;
-    height: 40px;
+  background-color: #f2f3f7;
+  height: 40px;
 }
 
 .unchecked {
@@ -40,6 +40,6 @@ li {
 }
 
 .isSelected {
-  background: rgba($color: #208EFD, $alpha: 0.07);
+  background: rgba($color: #208efd, $alpha: 0.07);
   border-radius: 8px;
 }

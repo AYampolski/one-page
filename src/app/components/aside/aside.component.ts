@@ -1,20 +1,16 @@
-import {
-  Component,
-  OnInit,
-  ViewChildren,
-  QueryList,
-  AfterViewInit,
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-aside',
   templateUrl: './aside.component.html',
   styleUrls: ['./aside.component.scss'],
 })
-export class AsideComponent implements OnInit, AfterViewInit {
+export class AsideComponent implements OnInit {
   selectedAccordion = 'Loan application';
+  backText = 'Back to Rate Quote';
   asideList = [
-    { title: 'Loan application',
+    {
+      title: 'Loan application',
       body: [
         { name: 'Loan Terms', isChecked: true },
         { name: 'Property Details', isChecked: true },
@@ -26,9 +22,10 @@ export class AsideComponent implements OnInit, AfterViewInit {
         { name: 'Filling the Application', isChecked: false },
         { name: 'Signing the Documents', isChecked: false },
         { name: 'Loan Terms', isChecked: false },
-      ]
+      ],
     },
-    { title: 'document gathering',
+    {
+      title: 'document gathering',
       body: [
         { name: 'Proin eros mauris', isChecked: false },
         { name: 'Mauris eget cursus', isChecked: true },
@@ -37,28 +34,19 @@ export class AsideComponent implements OnInit, AfterViewInit {
         { name: 'Duis cursus', isChecked: true },
         { name: 'Aliquam tortor nulla', isChecked: true },
         { name: 'Maecenas in feugiat nisl', isChecked: true },
-
       ],
     },
-    { title: 'Processing',
+    {
+      title: 'Processing',
       body: [
         { name: 'Etiam blandit', isChecked: true },
         { name: 'Suspendisse faucibus', isChecked: false },
         { name: ' Curabitur luctus erat vitae ', isChecked: false },
         { name: 'Sed semper pulvinar mi', isChecked: false },
       ],
-    }
+    },
   ];
-
-  @ViewChildren('looped') things: QueryList<any>;
   constructor() {}
 
   ngOnInit(): void {}
-
-  ngAfterViewInit() {
-    this.things.forEach((t, index) => {
-      let el: HTMLDivElement = t.nativeElement;
-      el.setAttribute('name-' + index, 'dynamicAttrString');
-    });
-  }
 }

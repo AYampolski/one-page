@@ -1,19 +1,20 @@
 <section class="about-you-container">
-    <h3 class="about-you__header">About you</h3>
-    <div class="input-section">
-        <div class="school-years label-tx-md">
-            <app-input-number [title]="inputNumberTitle" [initValue]="inputNumberValue"></app-input-number>
-        </div>
-        <div class="status">
-            <app-dropdown></app-dropdown>
-        </div>
+  <h3 class="about-you__header">About you</h3>
+  <div class="input-section">
+    <div class="school-years label-tx-md">
+      <app-input-number
+        [title]="inputNumberTitle"
+        [initValue]="inputNumberValue"
+      ></app-input-number>
     </div>
-    <div class="dependant">
-        <h4 class="dependant__header">Do you have any dependants?</h4>
-        <div>
-            <app-toggle></app-toggle>
-        </div>
-
+    <div class="status">
+      <app-dropdown></app-dropdown>
     </div>
-
+  </div>
+  <div class="dependant">
+    <h4 class="dependant__header">{{ dependantText }}</h4>
+    <div>
+      <app-toggle></app-toggle>
+    </div>
+  </div>
 </section>

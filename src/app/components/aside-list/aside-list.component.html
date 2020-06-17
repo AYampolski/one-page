@@ -1,5 +1,9 @@
 <ul>
-  <li *ngFor="let item of checkboxList" class="checklist" [ngClass]="{'isSelected': item.name === selectedItem}">
+  <li
+    *ngFor="let item of checkboxList"
+    class="checklist"
+    [ngClass]="{ isSelected: item.name === selectedItem }"
+  >
     <div class="checklist-img">
       <img
         [ngClass]="item.isChecked ? 'checked' : 'unchecked'"
@@ -7,7 +11,7 @@
       />
     </div>
 
-    <div class="checklist-item" >
+    <div class="checklist-item">
       {{ item.name }}
     </div>
   </li>
